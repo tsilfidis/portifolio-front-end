@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --color-font-destaque: #BBAB8C;
+    --color-font: #DED0B6;
+    --color-beckground: #FDF7E4;
+    --color-hover: #FAEED1;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-beckground);
+    color: var(--color-font);
+}
+
+.cabecalho {
+    padding: 3% 0% 0% 3%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600px;
+    text-align: center;
+    border: 2px solid var(--color-font-destaque);
+    border-radius: 6px;
+    width: 200px;
+    color: var(--color-font-destaque);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    background-color: var(--color-hover);
+    color: var(--color-font-destaque);
+    scale: 105%;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    justify-content: space-between;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+}
+
+.titulo-destaque{
+    color: var(--color-font-destaque);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    text-align: justify;
+}
+
+.apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: var(--color-font-destaque);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.apresentacao__links_subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-font-destaque);
+    width: 60%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 130%;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-font);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--color-hover);
+    color: var(--color-font-destaque);
+    scale: 105%;
+
+}
+
+.contorno__imagem {
+    width: 480px;
+    height: 480px;
+    padding: 0;
+    border: 3px solid var(--color-font-destaque);
+    border-radius: 16px;
+}
+
+.imagem {
+    position: relative;
+    right: 3%;
+    top: 3%;
+    width: 480px;
+    height: 480px;
+    border-radius: 16px;
+    background-image: url('../img/Pana.png');
+    background-size: cover;
+    background-position: right;
+    
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--color-beckground);
+    background-color: var(--color-font-destaque);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-font-destaque: #22d4fd;
+        --color-font: #FEFEFE;
+        --color-beckground: #000000;
+        --color-hover: #272727;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 3% 3%;
+    }
+    
+    .cabecalho__menu {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .cabecalho__menu__link {
+        width: 150px;
+        font-size: 1rem;
+    }
+    
+    .apresentacao {
+        padding: 3%;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+        gap: 20px;
+    }
+
+    .contorno__imagem {
+        width: 250px;
+        height: 250px;
+        gap: 40px;
+    }
+
+    .imagem {
+    width: 250px;
+    height: 250px;
+    }
+}
