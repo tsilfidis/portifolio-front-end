@@ -136,7 +136,7 @@ body{
     width: 480px;
     height: 480px;
     border-radius: 16px;
-    background-image: url('./img/pana.png');
+    background-image: url('../img/pana.png');
     background-size: cover;
     background-position: right;
     
